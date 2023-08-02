@@ -1,0 +1,313 @@
+html, body {
+    font-size: 16px;
+
+}
+
+/*  Top header section*/
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .3125rem;
+    padding-bottom: .625rem;
+    border-bottom: .1875rem solid orange;
+}
+
+/* Logo + title container section */
+.header-main-container {
+    display: flex;
+    flex-direction: row;
+    gap: .625rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.title {
+    flex-grow: 1;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.main-logo {
+    height: 2.8125rem;
+    min-width: fit-content;
+    max-width: fit-content;
+    flex-grow: 1;
+    border: .125rem solid orange;
+    border-radius: 50%;
+    padding: .3125rem;
+}
+
+.messengers-logo {
+    height: 1.5625rem;
+}
+
+/*----------END---------------*/
+
+/* Top navigation  menu*/
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: .625rem;
+    font-weight: bold;
+    border-bottom: .0625rem solid orange;
+    padding: .625rem;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+.menu-container-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: .625rem;
+    font-weight: bold;
+    padding: .625rem;
+}
+
+.menu-container-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: .625rem;
+    font-weight: bold;
+    padding: .625rem;
+}
+
+.anchor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .3125rem;
+    padding-left: .3125rem;
+    padding-right: .3125rem;
+    border: .0625rem solid orange;
+    border-radius: .625rem;
+    text-decoration: none;
+    color: black;
+}
+
+.anchor:hover {
+    background-color: orange;
+    color: white;
+}
+
+
+.menu-main-icon, .menu-icon {
+    height: 1.875rem;
+}
+
+/*------END-------*/
+
+/*---------Food titles and images CSS----------*/
+.food-title {
+    text-align: center;
+    border-bottom: .0625rem solid orange;
+}
+
+.food-img {
+    border-radius: 1.875rem;
+    padding: .3125rem;
+    width: 15.625rem;
+}
+
+/* Salad Section */
+.salad {
+    display: flex;
+    flex-direction: row;
+    gap: .625rem;
+    border: .0625rem solid orange;
+    margin: .3125rem;
+    border-radius: .3125rem;
+    align-items: center;
+    padding: .3125rem;
+}
+
+.space {
+    flex-grow: 0;
+    flex-shrink: 0;
+
+}
+
+.description {
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+/*-----------END--------------*/
+
+/* Main Course Section */
+.main {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: .625rem;
+    border: .0625rem solid orange;
+    margin: .3125rem;
+    border-radius: .3125rem;
+    align-items: center;
+    padding: .3125rem;
+}
+
+/*-----------END--------------*/
+
+/* Desert Section */
+.desert {
+    display: flex;
+    flex-direction: row;
+    gap: .625rem;
+    border: .0625rem solid orange;
+    margin: .3125rem;
+    border-radius: .3125rem;
+    align-items: center;
+    padding: .3125rem;
+}
+
+/*-----------END--------------*/
+
+/* Drink Section */
+.drink {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: .625rem;
+    border: .0625rem solid orange;
+    margin: .3125rem;
+    border-radius: .3125rem;
+    align-items: center;
+    padding: .3125rem;
+}
+
+/*-----------END--------------*/
+
+
+/*------------Footer section----------*/
+
+.footer {
+    display: flex;
+    gap: .625rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-weight: bold;
+    padding-top: .625rem;
+    border-top: .1875rem solid orange;
+    padding: .3125rem;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 400;
+}
+
+.footer-container {
+    display: flex;
+    gap: .625rem;
+    list-style: none;
+}
+
+.footer-item {
+    padding: .3125rem;
+    padding-right: 0;
+    font-weight: 700;
+
+}
+
+.footer-item:hover {
+    background-color: orange;
+    padding: .3125rem;
+    border-radius: .3125rem;
+    color: white;
+}
+
+.designer {
+    background-color: palevioletred;
+    color: aliceblue;
+    padding: .1875rem;
+}
+
+.designer:hover {
+    color: aqua;
+}
+
+/* Mobile screen adjustments */
+@media screen and (min-width: 102.25rem) {
+    html, body {
+        font-size: 110%;
+    }
+}
+
+@media screen and (max-width: 31.25rem) {
+    .menu-word {
+        display: none;
+    }
+
+    .menu-main-icon {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 27.4375rem) {
+    .header {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: .625rem;
+    }
+
+    .nav-menu {
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+
+    .main-logo {
+        height: 2,1875rem;
+    }
+
+    .mobile {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .rights, .designer {
+        order: 2;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        font-size: small;
+    }
+
+    .footer-container {
+        border-bottom: .0625rem solid orange;
+    }
+
+
+}
+
+@media screen and (max-width: 25rem) {
+    .nav-words {
+        display: none;
+    }
+
+    .menu-main-icon {
+        display: none;
+    }
+
+    .menu-item {
+        border-radius: 50%;
+        padding: .4375rem;
+    }
+
+    .main-logo {
+        height: 2.125rem;
+    }
+}
+
